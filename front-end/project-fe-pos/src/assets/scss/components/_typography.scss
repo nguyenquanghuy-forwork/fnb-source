@@ -1,0 +1,276 @@
+.fnb-typography {
+  &--default-color {
+    color: $black;
+  }
+  &__hyperlink {
+    color: $fnb-100;
+  }
+  &__type {
+    &--c-regular {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px; /* 133.333% */
+    }
+    &--c-medium {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 166.667% */
+    }
+    &--c-bold {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px; /* 166.667% */
+    }
+    &--c-italic {
+      font-size: 12px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 20px; /* 166.667% */
+    }
+    &--c-underlined {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px; /* 166.667% */
+      text-decoration-line: underline;
+    }
+    &--c-bold-underlined {
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px; /* 166.667% */
+      text-decoration-line: underline;
+    }
+    &--b2-regular {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px; /* 128.571% */
+    }
+    &--b2-medium {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px; /* 171.429% */
+    }
+    &--b2-bold {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 171.429% */
+    }
+    &--b2-italic {
+      font-size: 14px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 24px; /* 171.429% */
+    }
+    &--b2-underlined {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 171.429% */
+      text-decoration-line: underline;
+    }
+    &--b2-bold-underlined {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 171.429% */
+      text-decoration-line: underline;
+    }
+    &--b1-regular {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
+    &--b1-medium {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px; /* 150% */
+    }
+    &--b1-bold {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px; /* 125% */
+    }
+    &--b1-italic {
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
+    &--b1-underlined {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+      text-decoration-line: underline;
+    }
+    &--b1-bold-underlined {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 150% */
+      text-decoration-line: underline;
+    }
+    &--h3-regular {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27px; /* 150% */
+    }
+    &--h3-medium {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 27px; /* 150% */
+    }
+    &--h3-bold {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 27px; /* 150% */
+    }
+    &--h3-italic {
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 27px; /* 150% */
+    }
+    &--h3-underlined {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27px; /* 150% */
+      text-decoration-line: underline;
+    }
+    &--h3-bold-underlined {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 27px; /* 150% */
+      text-decoration-line: underline;
+    }
+    &--h2-regular {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 150% */
+    }
+    &--h2-medium {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px; /* 150% */
+    }
+    &--h2-bold {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 30px; /* 150% */
+    }
+    &--h2-italic {
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 30px; /* 150% */
+    }
+    &--h2-underlined {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 150% */
+      text-decoration-line: underline;
+    }
+    &--h2-bold-underlined {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 30px; /* 150% */
+      text-decoration-line: underline;
+    }
+    &--h1-regular {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 36px; /* 150% */
+    }
+    &--h1-medium {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 36px; /* 150% */
+    }
+    &--h1-bold {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 36px; /* 150% */
+    }
+    &--h1-italic {
+      font-size: 24px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 36px; /* 150% */
+    }
+    &--h1-underlined {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 36px; /* 150% */
+      text-decoration-line: underline;
+    }
+    &--h1-bold-underlined {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 36px; /* 150% */
+      text-decoration-line: underline;
+    }
+    &--d1-regular {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 48px; /* 150% */
+    }
+    &--d1-medium {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 40px; /* 125% */
+    }
+    &--d1-bold {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px; /* 125% */
+    }
+    &--d1-italic {
+      font-size: 32px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 40px; /* 125% */
+    }
+    &--d1-underlined {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 40px; /* 125% */
+      text-decoration-line: underline;
+    }
+    &--d1-bold-underlined {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px; /* 125% */
+      text-decoration-line: underline;
+    }
+  }
+}

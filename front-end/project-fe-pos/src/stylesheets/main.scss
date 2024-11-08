@@ -1,0 +1,72 @@
+.h-100{
+  height: 100%;
+}
+.h-fit-content{
+  height: fit-content;
+}
+.d-flex {
+  display: flex;
+}
+.f-direction-row{
+  flex-direction: row;
+}
+.f-direction-column{
+  flex-direction: column;
+}
+.gap-12{
+  gap: 12px;
+}
+.gap-16{
+  gap: 16px;
+}
+.flex-align-item{
+  display: flex;
+  align-items: center;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #50429b;
+  border-radius: 2px;
+}
+.flex-1{
+  flex: 1;
+}
+:root {
+  --primaryTextColor: #50429b;
+  --dialogHeaderColor: #2b2162;
+  --borderColor: #a5abde;
+  --brandingBackgroundColor: #f7f5ff;
+
+  --brandingSecondary: #ff8c24;
+  --brandingBackground: #fff;
+  --cornerRadiusRadiusSM: 16px;
+  --borderSearchBar: #D8DAE1;
+  --borderPopover: #817CBA;
+
+  //background
+  --backgroundMain: #F7F5FF;
+  --backgroundSlateBlue: #50429B;
+  --backgroundBianca: #FFFAF5;
+  --backgroundSnowDrift: #F4FBF8;
+  --backgroundLightSnowDrift: #f4fff6;
+  --brandingSecondary: #ff8c24;
+  --brandingLightSecondary: #faf6f2;
+  --backgroundMercury: #E6E6E6;
+  --backgroundError: #FFF7F7;
+  --backgroundThTable: #E1DBFF;
+  --backgroundHoverButton: #8574e7;
+
+  //text
+  --textWhite: #FFFFFF;
+  --textJade: #1CA362;
+  --neutralWhite: #9F9F9F;
+  --textTimberWolf: #D9D9D9;
+  --textMain: #282828;
+  --textHarleyDavidsonOrange: #DB1B1B;
+  --placeholderSearchBar: #B8B6C1;
+  --titleFilter: #2F2D39;
+  --textLinking: #237BFF;
+}

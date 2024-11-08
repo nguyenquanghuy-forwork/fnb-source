@@ -1,0 +1,19 @@
+{
+    "introduction": {
+      "title": "Go F&B giúp bạn:",
+      "content": "Nhận và gửi tin nhắn cho khách hàng đến từ tối đa 5 Facebook Fanpage và quản lý chúng trong Giao diện duy nhất.",
+      "collectCustomersData": "Thu thập dữ liệu khách hàng và tạo khách hàng mới hoặc liên kết với khách hàng đã có trong cửa hàng F&B của bạn",
+      "createOrders": "Tạo đơn hàng và gửi xác nhận ngay tới khách hàng thông qua màn hình chat",
+      "createTags": "Tạo thẻ và áp dụng cho khách hàng trong cửa sổ chat Facebook",
+      "assignConversations": "Chỉ định nhân viên trả lời khách hàng",
+      "previewCustomerNotes": "Thêm và xem trước ghi chú khách hàng"
+    },
+    "setting": "Cài đặt",
+    "connect": "Kết nối",
+    "connectAccount": "Kết nối tài khoản",
+    "deleteAccount": "Xóa tài khoản",
+    "disconnect": "Ngắt kết nối",
+    "accountConnect": "Kết nối tài khoản ",
+    "fanpageConnect": "Kết nối Fanpage"
+  }
+  

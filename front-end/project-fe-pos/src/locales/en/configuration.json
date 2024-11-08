@@ -1,0 +1,22 @@
+{
+    "documentation" : "Documentation",
+    "apiConfiguration" : "API Configuration",
+    "apiDocumentation" : "API Documentation",
+    "enterURL" : "Enter URL",
+    "method" : "Method",
+    "attribute" : "Attribute",
+    "dataType" : "Data Type",
+    "mandatory" : "Mandatory",
+    "description" : "Description",
+    "request" : "Request",
+    "responseProperties" : "Response Properties",
+    "example" : "Example",
+    "responseExpect" : "Response expect",
+    "responseExpectResult1" : "Result {",
+    "responseExpectResult2" : "success: true",
+    "responseExpectResult3" : "message: \"{your response message}\"",
+    "responseExpectResult4" : "data: {[{",
+    "responseExpectResult5" : "ID:\"\"",
+    "responseExpectResult6" : "name:\"\"",
+    "responseExpectResult7" : "address:\"\""
+}

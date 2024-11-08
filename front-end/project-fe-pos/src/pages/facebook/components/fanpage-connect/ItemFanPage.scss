@@ -1,0 +1,18 @@
+.item-fan-page-connect {
+  background: #F7F5FF;
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__info {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+  }
+  &__thumbnail {
+    border-radius: 16px;
+    width: 72px;
+    height: 72px;
+  }
+}

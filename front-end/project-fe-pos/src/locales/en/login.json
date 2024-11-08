@@ -1,0 +1,18 @@
+{
+  "login": "Login",
+  "enterYourEmail": "Enter your email",
+  "pleaseEnterYourEmail": "Please enter your email",
+  "password": "Password",
+  "enterYourPassword": "Enter your password",
+  "pleaseEnterYourPassword": "Please enter your password",
+  "forgotPassword": "Forgot password",
+  "doNotHaveAnAccount": "Don't have an account?",
+  "registerHere": "Register here",
+  "kindlyNotification": "Kindly notification",
+  "contentNotificationActiveAccount": "Dear our valued customer.<br/> Your account has not been activated yet. You need to register package subscription first. Please contact our service team as follow information to get soonest support!",
+  "hotline": "Hotline: ",
+  "email": "Email: ",
+  "activateAccount": "Activate account",
+  "loggedInSuccessfully": "Logged in successfully",
+  "loginFailed": "Login failed"
+}

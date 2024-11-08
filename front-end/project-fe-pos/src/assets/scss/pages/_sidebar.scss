@@ -1,0 +1,16 @@
+.side-bar-configuration {
+  padding: 10px 12px;
+  background: #50429b;
+  color: white;
+  border-radius: 12px;
+  height: 44px;
+  width: calc(100% - 24px);
+  text-align: center;
+  bottom: 12px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}

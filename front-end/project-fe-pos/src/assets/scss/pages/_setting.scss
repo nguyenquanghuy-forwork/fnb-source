@@ -1,0 +1,115 @@
+.setting-page-cover {
+  .connect-content {
+    display: flex;
+    gap: 40px;
+    padding: 24px;
+    .connect-content-left {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      .connect-content-left-img {
+        width: 305px;
+      }
+      .tiktok-content-text {
+        flex-direction: column;
+        padding-left: 32px;
+        div {
+          gap: 12px;
+        }
+      }
+    }
+    .connect-content-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 7%;
+    }
+  }
+  .connect-content-cover {
+    display: flex;
+    gap: 12px;
+    .connect-item-cover {
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      padding: 12px;
+      border-radius: 16px;
+      width: calc(50% - 6px);
+      .connect-item-btn {
+        width: 169px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f7f5ff;
+      }
+      .ant-btn-primary:hover {
+        background: unset !important;
+      }
+    }
+  }
+  .btn-connect {
+    width: 169px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shop-list-header {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    .btn-new-connect {
+      height: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  .setting-page-cover {
+    .connect-content {
+      flex-direction: column;
+      .connect-content-left {
+        .connect-content-left-img {
+          width: 205px;
+        }
+        .tiktok-content-text {
+          padding-left: 0;
+          gap: 14px;
+          div {
+            flex-wrap: nowrap;
+          }
+        }
+      }
+    }
+    .connect-content-cover {
+      .connect-item-cover {
+        width: 100%;
+        .store-avatar {
+          width: 52px;
+        }
+        .store-name {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 155px;
+        }
+        .connect-item-btn {
+          width: 141px;
+        }
+      }
+    }
+    .btn-connect {
+      width: 100%;
+    }
+    .shop-list-header {
+      align-items: flex-start;
+      flex-direction: column;
+      .btn-new-connect {
+        margin-top: 12px;
+      }
+    }
+  }
+}

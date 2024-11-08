@@ -1,0 +1,18 @@
+{
+  "login": "Đăng nhập",
+  "enterYourEmail": "Nhập email",
+  "pleaseEnterYourEmail": "Vui lòng nhập email của bạn",
+  "password": "Mật khẩu",
+  "enterYourPassword": "Nhập mật khẩu",
+  "pleaseEnterYourPassword": "Vui lòng nhập mật khẩu của bạn",
+  "forgotPassword": "Quên mật khẩu",
+  "doNotHaveAnAccount": "Chưa có tài khoản?",
+  "registerHere": "Đăng ký tại đây",
+  "kindlyNotification": "Trân trọng thông báo ",
+  "contentNotificationActiveAccount": "Kính gửi quý khách hàng.<br/> Tài khoản của bạn vẫn chưa được kích hoạt. Vui lòng đăng ký gói thuê bao. Vui lòng liên hệ với đội ngũ dịch vụ của chúng tôi theo thông tin sau để được hỗ trợ sớm nhất!",
+  "hotline": "Hotline: ",
+  "email": "Email: ",
+  "activateAccount": "Kích hoạt tài khoản",
+  "loggedInSuccessfully": "Đăng nhập thành công",
+  "loginFailed": "Đăng nhập thất bại"
+}

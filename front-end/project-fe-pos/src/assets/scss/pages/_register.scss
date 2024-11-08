@@ -1,0 +1,117 @@
+.register-container {
+  background: {
+    image: url(../../images/go-social-bg.png);
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+    attachment: fixed;
+  }
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17.5%;
+  .register-form {
+    width: 23.3%;
+    min-width: 448px;
+    background: var(--background, #fff);
+    box-shadow: 8px 8px 120px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 28px;
+    border-radius: 24px;
+
+    &.register-success {
+      justify-content: center;
+      align-items: center;
+      gap: 28;
+      padding: 80px 20px;
+      .description-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 28px;
+      }
+
+      .awesome-text {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 42px;
+        margin-top: 12px;
+        color: #50429b;
+      }
+
+      .description {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 24px;
+      }
+    }
+
+    .register-form-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .login-form-title {
+        color: #342b64;
+        font-size: 32px;
+        font-weight: 600;
+      }
+      .ant-select-selector {
+        box-shadow: none;
+        border: none;
+      }
+    }
+    .text-btn-login {
+      color: #fff;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+    .btn-start {
+      width: 45%;
+    }
+    .text-btn-start {
+      width: 100%;
+      color: #fff;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .register-container {
+    flex-direction: column;
+    gap: unset;
+    background: {
+      image: url(../../images/pizza-dishes.png);
+    }
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    .register-form {
+      min-width: unset;
+      width: 100%;
+      border-radius: 24px 24px 0px 0px;
+    }
+    .logo-bg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      width: 100%;
+      .ant-image {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+      }
+      img {
+        width: 50%;
+      }
+    }
+  }
+}

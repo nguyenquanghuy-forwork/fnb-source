@@ -1,0 +1,10 @@
+.group-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .group-button-header {
+    column-gap: 12px;
+    display: flex;
+    margin-left: auto;
+  }
+}

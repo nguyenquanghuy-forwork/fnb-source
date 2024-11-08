@@ -1,0 +1,22 @@
+{
+    "documentation" : "Tài liệu",
+    "apiConfiguration" : "Cấu hình API",
+    "apiDocumentation" : "Tài liệu API",
+    "enterURL" : "Nhập URL",
+    "method" : "Phương thức",
+    "attribute" : "Thuộc tính",
+    "dataType" : "Kiểu dữ liệu",
+    "mandatory" : "Bắt buộc",
+    "description" : "Mô tả",
+    "request" : "Yêu cầu",
+    "responseProperties" : "Thuộc tính phản hồi",
+    "example" : "Ví dụ",
+    "responseExpect" : "Kết quả mong muốn",
+    "responseExpectResult1" : "Kết quả {",
+    "responseExpectResult2" : "thành công: đúng",
+    "responseExpectResult3" : "tin nhắm: \"{tin nhắn phản hồi của bạn}\"",
+    "responseExpectResult4" : "dự liệu: {[{",
+    "responseExpectResult5" : "ID:\"\"",
+    "responseExpectResult6" : "tên:\"\"",
+    "responseExpectResult7" : "địa chỉ:\"\""
+}

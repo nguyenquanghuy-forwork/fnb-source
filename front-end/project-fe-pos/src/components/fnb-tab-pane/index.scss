@@ -1,0 +1,148 @@
+.fnb-tab-pane {
+  border-radius: 12px 12px 0 0;
+  &--default {
+    .ant-tabs-nav {
+      .ant-tabs-nav-wrap {
+        border-radius: 12px 12px 0 0;
+        .ant-tabs-nav-list {
+          .ant-tabs-tab {
+            .ant-tabs-tab-btn {
+              .tab-pane-configuration {
+                &__last {
+                  border-top-right-radius: 12px;
+                }
+              }
+            }
+          }
+          .ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &--show-icon-show-more {
+    .ant-tabs-nav {
+      .ant-tabs-nav-wrap {
+        border-radius: 12px 0px 0 0;
+      }
+    }
+  }
+  .ant-tabs-nav {
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 0 !important;
+    .ant-tabs-nav-operations {
+      background: #fff;
+      border-radius: 0 12px 12px 0;
+    }
+    .ant-tabs-nav-wrap {
+      border-bottom: none;
+      .ant-tabs-nav-list {
+        .ant-tabs-tab {
+          padding: 0 !important;
+          margin-left: 0 !important;
+          background: #E1DBFF;
+          &__last-item {
+            border-top-right-radius: 12px;
+          }
+          .ant-tabs-tab-btn {
+            .tab-pane-configuration {
+              background: #fff;
+              display: flex;
+              position: relative;
+              justify-content: center;
+              align-items: center;
+              height: 56px;
+              padding: 0 8px;
+              transition: border-bottom-left-radius 0.1s ease-out;
+              transition: border-bottom-right-radius 0.1s ease-out;
+              &__wrapper-text {
+                padding: 8px;
+                border-radius: 12px;
+                min-width: 134px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.1s ease-out;
+              }
+              &:hover {
+                @media (hover: hover) and (pointer: fine) {
+                  transition: border-bottom-left-radius 0.2s ease-out;
+                  transition: border-bottom-right-radius 0.2s ease-out;
+                  transition: background-color 0.2s ease-out;
+                  .tab-pane-configuration {
+                    &__wrapper-text {
+                      transition: all 0.1s ease-out;
+                      background: #F5F2FF;
+                    }
+                  }
+                }
+              }
+              &__prev {
+                border-bottom-right-radius: 12px;
+              }
+              &__next {
+                border-bottom-left-radius: 12px;
+              }
+            
+              &__divider {
+                border-left: 1px solid #E1DBFF;
+                height: 26px;
+                position: absolute;
+                right: 0;
+                &--hide {
+                  display: none;
+                }
+              }
+              &__title {
+                color: #7461DB;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                text-transform: uppercase;
+              }
+            }
+          }
+        }
+        .ant-tabs-tab-active {
+          background: #fff !important;
+          .tab-pane-configuration {
+            background: #E1DBFF !important;
+            border-radius: 12px 12px 0 0;
+            &__wrapper-text {
+              transition: all 0.1s ease-out;
+              background: #E1DBFF !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .ant-tabs-content-holder {
+    .ant-tabs-content {
+      .ant-tabs-tabpane {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.fnb-tab-pane-wrapper-child-configuration {
+  background-color: #fff;
+  border-radius: 0 12px 12px 12px;
+  .content-child-configuration {
+    background-color: #E1DBFF;
+    padding: 12px;
+    border-radius: 12px;
+    min-height: 60vh;
+    transition: border-top-left-radius 0.2s ease-out;
+    &__first-item {
+      transition: border-top-left-radius 0.2s ease-out;
+      border-top-left-radius: 0;
+    }
+    &__general-item {
+      border-top-left-radius: 0 !important;
+    }
+  }
+}

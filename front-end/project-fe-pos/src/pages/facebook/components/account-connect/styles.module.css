@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+  min-height: 60dvh;
+  border-radius: 12px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+
+  .groupButton {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    background-color: #F7F5FF;
+    padding: 12px;
+    gap: 16px;
+
+    img {
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      object-fit: cover;
+    }
+
+    .name {
+      flex: 1;
+      color: #282828;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      word-break: break-all;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      overflow: hidden;
+    }
+
+    .groupButton {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+}

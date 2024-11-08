@@ -1,0 +1,1117 @@
+{
+    "menuItems": [
+      {
+        "key": "1",
+        "label": "Branch",
+        "children": [
+          {
+            "key": "1-1",
+            "label": "GET branches",
+            "content": {
+              "description": "This API to get your store's branches",
+              "apiName": "GET branches API",
+              "method": "GET",
+              "request": {
+                "attributes": [
+                  {
+                    "attribute": "page",
+                    "dataType": "Integer",
+                    "mandatory": true,
+                    "description": "Current page of the collection. The default is 1."
+                  },
+                  {
+                    "attribute": "pageSize",
+                    "dataType": "Integer",
+                    "mandatory": false,
+                    "description": "Maximum number of items to be returned in the result set. The default is 10."
+                  },
+                  {
+                    "attribute": "search",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit results to those matching a string."
+                  },
+                  {
+                    "attribute": "order",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Order sort attribute ascending or descending. Options: asc and desc. The default is desc."
+                  },
+                  {
+                    "attribute": "status",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit result set to products assigned a specific status. Options: any, active, inactive. The default is any."
+                  },
+                  {
+                    "attribute": "attribute",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit result set to products with a specific attribute."
+                  },
+                  {
+                    "attribute": "include",
+                    "dataType": "Array",
+                    "mandatory": false,
+                    "description": "Limit result set to specific ids."
+                  },
+                  {
+                    "attribute": "exclude",
+                    "dataType": "Array",
+                    "mandatory": false,
+                    "description": "Ensure result set excludes specific ids."
+                  },
+                  {
+                    "attribute": "after",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit response to resources activated after a given compliant date."
+                  },
+                  {
+                    "attribute": "before",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit response to resources activated before a given compliant date."
+                  },
+                  {
+                    "attribute": "context",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Scope under which the request is made; determines fields present in response. Options: view and edit. The default is view."
+                  }
+                ]
+              },
+              "response": {
+                "properties": [
+                  {
+                    "attribute": "id",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "name",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "address",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "phone",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "email",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "latitude",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "longitude",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "province",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "district",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "ward",
+                    "dataType": "String",
+                    "mandatory": false
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "key": "1-2",
+            "label": "GET branch detail",
+            "content": {
+              "description": "This API to get your store's branches",
+              "apiName": "GET branch detail API",
+              "method": "GET",
+              "request": {
+                "attributes": [
+                  {
+                    "attribute": "id",
+                    "dataType": "string",
+                    "mandatory": true,
+                    "description": "id of the branch"
+                  }
+                ]
+              },
+              "response" : {
+                "properties": [
+                  {
+                    "attribute": "id",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "name",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "address",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "phone",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "email",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "latitude",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "longitude",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "province",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "district",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "ward",
+                    "dataType": "String",
+                    "mandatory": false
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "key": "2",
+        "label": "Product",
+        "children": [
+          {
+            "key": "2-1",
+            "label": "GET product list",
+            "content": {
+              "description": "This API to get your store's product",
+              "apiName": "GET product list API",
+              "method": "GET",
+              "request": {
+                "attributes": [
+                  {
+                    "attribute": "page",
+                    "dataType": "Integer",
+                    "mandatory": true,
+                    "description": "Current page of the collection. The default is 1."
+                  },
+                  {
+                    "attribute": "pageSize",
+                    "dataType": "Integer",
+                    "mandatory": false,
+                    "description": "Maximum number of items to be returned in the result set. The default is 10."
+                  },
+                  {
+                    "attribute": "search",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit results to those matching a string."
+                  },
+                  {
+                    "attribute": "order",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Order sort attribute ascending or descending. Options: asc and desc. The default is desc."
+                  },
+                  {
+                    "attribute": "status",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit result set to products assigned a specific status. Options: any, active, inactive. The default is any."
+                  },
+                  {
+                    "attribute": "attribute",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit result set to products with a specific attribute."
+                  },
+                  {
+                    "attribute": "include",
+                    "dataType": "Array",
+                    "mandatory": false,
+                    "description": "Limit result set to specific ids."
+                  },
+                  {
+                    "attribute": "exclude",
+                    "dataType": "Array",
+                    "mandatory": false,
+                    "description": "Ensure result set excludes specific ids."
+                  },
+                  {
+                    "attribute": "after",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit response to resources activated after a given compliant date."
+                  },
+                  {
+                    "attribute": "before",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit response to resources activated before a given compliant date."
+                  },
+                  {
+                    "attribute": "context",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Scope under which the request is made; determines fields present in response. Options: view and edit. The default is view."
+                  }
+                ]
+              },
+              "response" : {
+                "properties": [
+                  {
+                    "attribute": "id",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "name",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "description",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "price",
+                    "dataType": "Decimal(18,2)",
+                    "mandatory": false,
+                    "description": "Price of the product if it does not have any variant."
+                  },
+                  {
+                    "attribute": "variants",
+                    "dataType": "Array[Variant Object]",
+                    "mandatory": false,
+                    "description": "Null when the product does not have any variant."
+                  },
+                  {
+                    "attribute": "category",
+                    "dataType": "Category Object",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "toppings",
+                    "dataType": "Array[Topping Object]",
+                    "mandatory": false,
+                    "description": "List ids of product toppings."
+                  },
+                  {
+                    "attribute": "options",
+                    "dataType": "Array[Option Object]",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "image",
+                    "dataType": "Array[String]",
+                    "mandatory": false,
+                    "description": "URL of the image."
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "key": "2-2",
+            "label": "GET product detail",
+            "content": {
+              "description": "This API to get your store's product",
+              "apiName": "GET product detail API",
+              "method": "GET",
+              "request": {
+                "attributes": [
+                  {
+                    "attribute": "id",
+                    "dataType": "string",
+                    "mandatory": true,
+                    "description": "current page of the collection. default is 1."
+                  }
+                ]
+              },
+              "response" : {
+                "properties": [
+                  {
+                    "attribute": "id",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "name",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "description",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "price",
+                    "dataType": "Decimal(18,2)",
+                    "mandatory": false,
+                    "description": "Price of the product if it does not have any variant."
+                  },
+                  {
+                    "attribute": "variants",
+                    "dataType": "Array[Variant Object]",
+                    "mandatory": false,
+                    "description": "Null when the product does not have any variant."
+                  },
+                  {
+                    "attribute": "category",
+                    "dataType": "Category Object",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "toppings",
+                    "dataType": "Array[Topping Object]",
+                    "mandatory": false,
+                    "description": "List ids of product toppings."
+                  },
+                  {
+                    "attribute": "options",
+                    "dataType": "Array[Option Object]",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "image",
+                    "dataType": "Array[String]",
+                    "mandatory": false,
+                    "description": "URL of the image."
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "key": "3",
+        "label": "CRM",
+        "children": [
+          {
+            "key": "3-1",
+            "label": "GET list customers",
+            "content": {
+              "description": "This API to get your store's customers",
+              "apiName": "GET list customers API",
+              "method": "GET",
+              "request": {
+                "attributes": [
+                  {
+                    "attribute": "page",
+                    "dataType": "Integer",
+                    "mandatory": true,
+                    "description": "Current page of the collection. The default is 1."
+                  },
+                  {
+                    "attribute": "pageSize",
+                    "dataType": "Integer",
+                    "mandatory": false,
+                    "description": "Maximum number of items to be returned in the result set. The default is 10."
+                  },
+                  {
+                    "attribute": "search",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit results to those matching a string."
+                  },
+                  {
+                    "attribute": "order",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Order sort attribute ascending or descending. Options: asc and desc. The default is desc."
+                  },
+                  {
+                    "attribute": "status",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit result set to products assigned a specific status. Options: any, active, inactive. The default is any."
+                  },
+                  {
+                    "attribute": "attribute",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit result set to products with a specific attribute."
+                  },
+                  {
+                    "attribute": "include",
+                    "dataType": "Array",
+                    "mandatory": false,
+                    "description": "Limit result set to specific ids."
+                  },
+                  {
+                    "attribute": "exclude",
+                    "dataType": "Array",
+                    "mandatory": false,
+                    "description": "Ensure result set excludes specific ids."
+                  },
+                  {
+                    "attribute": "after",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit response to resources activated after a given compliant date."
+                  },
+                  {
+                    "attribute": "before",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit response to resources activated before a given compliant date."
+                  },
+                  {
+                    "attribute": "context",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Scope under which the request is made; determines fields present in response. Options: view and edit. The default is view."
+                  }
+                ]
+              },
+              "response" : {
+                "properties":  [
+                  {
+                    "attribute": "id",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "firstName",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "lastName",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "phone",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "email",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "DOB",
+                    "dataType": "Date",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "gender",
+                    "dataType": "Int",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "address",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "country",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "province",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "district",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "ward",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "tags",
+                    "dataType": "Array[Tag Object]",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "segments",
+                    "dataType": "Array[Segment Object]",
+                    "mandatory": false
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "key": "3-2",
+            "label": "GET customer detail",
+           "content": {
+              "description": "This API to get your store's customers",
+              "apiName": "GET customer detail API",
+              "method": "GET",
+              "request": {
+                "attributes": [
+                  {
+                    "attribute": "page",
+                    "dataType": "Integer",
+                    "mandatory": true,
+                    "description": "id of the customer"
+                  }
+                ]
+              },
+              "response" : {
+                "properties":  [
+                  {
+                    "attribute": "id",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "firstName",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "lastName",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "phone",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "email",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "DOB",
+                    "dataType": "Date",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "gender",
+                    "dataType": "Int",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "address",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "country",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "province",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "district",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "ward",
+                    "dataType": "String",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "tags",
+                    "dataType": "Array[Tag Object]",
+                    "mandatory": false
+                  },
+                  {
+                    "attribute": "segments",
+                    "dataType": "Array[Segment Object]",
+                    "mandatory": false
+                  }
+                ]
+              }
+            }
+          }, 
+          {
+            "key": "3-3",
+            "label": "GET list customer segments",
+           "content": {
+              "description": "This API to get your store's customers",
+              "apiName": "GET customer detail API",
+              "method": "GET",
+              "request": {
+                "attributes": [
+                  {
+                    "attribute": "page",
+                    "dataType": "Integer",
+                    "mandatory": true,
+                    "description": "Current page of the collection. The default is 1."
+                  },
+                  {
+                    "attribute": "pageSize",
+                    "dataType": "Integer",
+                    "mandatory": false,
+                    "description": "Maximum number of items to be returned in the result set. The default is 10."
+                  },
+                  {
+                    "attribute": "search",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit results to those matching a string."
+                  },
+                  {
+                    "attribute": "order",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Order sort attribute ascending or descending. Options: asc and desc. The default is desc."
+                  },
+                  {
+                    "attribute": "status",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit result set to products assigned a specific status. Options: any, active, inactive. The default is any."
+                  },
+                  {
+                    "attribute": "attribute",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit result set to products with a specific attribute."
+                  },
+                  {
+                    "attribute": "include",
+                    "dataType": "Array",
+                    "mandatory": false,
+                    "description": "Limit result set to specific ids."
+                  },
+                  {
+                    "attribute": "exclude",
+                    "dataType": "Array",
+                    "mandatory": false,
+                    "description": "Ensure result set excludes specific ids."
+                  },
+                  {
+                    "attribute": "after",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit response to resources activated after a given compliant date."
+                  },
+                  {
+                    "attribute": "before",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit response to resources activated before a given compliant date."
+                  },
+                  {
+                    "attribute": "context",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Scope under which the request is made; determines fields present in response. Options: view and edit. The default is view."
+                  }
+                ]
+              },
+              "response" : {
+                "properties":  [
+                  {
+                    "attribute": "id",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "name",
+                    "dataType": "String",
+                    "mandatory": true
+                  }    
+                ]
+              }
+            }
+          }, {
+            "key": "3-4",
+            "label": "GET detail customer segments",
+           "content": {
+              "description": "This API to get your store's customers",
+              "apiName": "GET customer segments detail API",
+              "method": "GET",
+              "request": {
+                "attributes": [
+                  {
+                    "attribute": "id",
+                    "dataType": "string",
+                    "mandatory": true,
+                    "description": "id of the customer segment"
+                  }
+                ]
+              },
+              "response" : {
+                "properties":  [
+                  {
+                    "attribute": "id",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "name",
+                    "dataType": "String",
+                    "mandatory": true
+                  }    
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "key": "4",
+        "label": "Tax & Fee",
+        "children": [
+          {
+            "key": "4-1",
+            "label": "GET tax list",
+            "content": {
+              "description": "This API to get your store's tax",
+              "apiName": "GET list tax API",
+              "method": "GET",
+              "request": {
+                "attributes": [
+                  {
+                    "attribute": "page",
+                    "dataType": "Integer",
+                    "mandatory": true,
+                    "description": "Current page of the collection. The default is 1."
+                  },
+                  {
+                    "attribute": "pageSize",
+                    "dataType": "Integer",
+                    "mandatory": false,
+                    "description": "Maximum number of items to be returned in the result set. The default is 10."
+                  },
+                  {
+                    "attribute": "search",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit results to those matching a string."
+                  },
+                  {
+                    "attribute": "order",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Order sort attribute ascending or descending. Options: asc and desc. The default is desc."
+                  },
+                  {
+                    "attribute": "status",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit result set to products assigned a specific status. Options: any, active, inactive. The default is any."
+                  },
+                  {
+                    "attribute": "attribute",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit result set to products with a specific attribute."
+                  },
+                  {
+                    "attribute": "include",
+                    "dataType": "Array",
+                    "mandatory": false,
+                    "description": "Limit result set to specific ids."
+                  },
+                  {
+                    "attribute": "exclude",
+                    "dataType": "Array",
+                    "mandatory": false,
+                    "description": "Ensure result set excludes specific ids."
+                  },
+                  {
+                    "attribute": "after",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit response to resources activated after a given compliant date."
+                  },
+                  {
+                    "attribute": "before",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit response to resources activated before a given compliant date."
+                  },
+                  {
+                    "attribute": "context",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Scope under which the request is made; determines fields present in response. Options: view and edit. The default is view."
+                  }
+                ]
+              },
+              "response" : {
+                "properties":[
+                  {
+                    "attribute": "id",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "name",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "value",
+                    "dataType": "Decimal(18,2)",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "isPercent",
+                    "dataType": "Bit",
+                    "mandatory": false,
+                    "description": "Indicates the type of value. 1 for percent, 0 for amount. The default is 1."
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "key": "4-2",
+            "label": "GET fee list",
+           "content": {
+              "description": "This API to get your store's fee",
+              "apiName": "GET list fee API",
+              "method": "GET",
+              "request": {
+                "attributes": [
+                  {
+                    "attribute": "page",
+                    "dataType": "Integer",
+                    "mandatory": true,
+                    "description": "Current page of the collection. The default is 1."
+                  },
+                  {
+                    "attribute": "pageSize",
+                    "dataType": "Integer",
+                    "mandatory": false,
+                    "description": "Maximum number of items to be returned in the result set. The default is 10."
+                  },
+                  {
+                    "attribute": "search",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit results to those matching a string."
+                  },
+                  {
+                    "attribute": "order",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Order sort attribute ascending or descending. Options: asc and desc. The default is desc."
+                  },
+                  {
+                    "attribute": "status",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit result set to products assigned a specific status. Options: any, active, inactive. The default is any."
+                  },
+                  {
+                    "attribute": "attribute",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit result set to products with a specific attribute."
+                  },
+                  {
+                    "attribute": "include",
+                    "dataType": "Array",
+                    "mandatory": false,
+                    "description": "Limit result set to specific ids."
+                  },
+                  {
+                    "attribute": "exclude",
+                    "dataType": "Array",
+                    "mandatory": false,
+                    "description": "Ensure result set excludes specific ids."
+                  },
+                  {
+                    "attribute": "after",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit response to resources activated after a given compliant date."
+                  },
+                  {
+                    "attribute": "before",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit response to resources activated before a given compliant date."
+                  },
+                  {
+                    "attribute": "context",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Scope under which the request is made; determines fields present in response. Options: view and edit. The default is view."
+                  }
+                ]
+              },
+              "response" : {
+                "properties":[
+                  {
+                    "attribute": "id",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "name",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "value",
+                    "dataType": "Decimal(18,2)",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "isPercent",
+                    "dataType": "Bit",
+                    "mandatory": false,
+                    "description": "Indicates the type of value. 1 for percent, 0 for amount. The default is 1."
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "key": "5",
+        "label": "Payment",
+        "children": [
+          {
+            "key": "5-1",
+            "label": "GET payment list",
+            "content": {
+              "description": "This API to get your store's payment",
+              "apiName": "GET list payment API",
+              "method": "GET",
+              "request": {
+                "attributes": [
+                  {
+                    "attribute": "page",
+                    "dataType": "Integer",
+                    "mandatory": true,
+                    "description": "Current page of the collection. The default is 1."
+                  },
+                  {
+                    "attribute": "pageSize",
+                    "dataType": "Integer",
+                    "mandatory": false,
+                    "description": "Maximum number of items to be returned in the result set. The default is 10."
+                  },
+                  {
+                    "attribute": "search",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit results to those matching a string."
+                  },
+                  {
+                    "attribute": "order",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Order sort attribute ascending or descending. Options: asc and desc. The default is desc."
+                  },
+                  {
+                    "attribute": "status",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit result set to products assigned a specific status. Options: any, active, inactive. The default is any."
+                  },
+                  {
+                    "attribute": "attribute",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit result set to products with a specific attribute."
+                  },
+                  {
+                    "attribute": "include",
+                    "dataType": "Array",
+                    "mandatory": false,
+                    "description": "Limit result set to specific ids."
+                  },
+                  {
+                    "attribute": "exclude",
+                    "dataType": "Array",
+                    "mandatory": false,
+                    "description": "Ensure result set excludes specific ids."
+                  },
+                  {
+                    "attribute": "after",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit response to resources activated after a given compliant date."
+                  },
+                  {
+                    "attribute": "before",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Limit response to resources activated before a given compliant date."
+                  },
+                  {
+                    "attribute": "context",
+                    "dataType": "String",
+                    "mandatory": false,
+                    "description": "Scope under which the request is made; determines fields present in response. Options: view and edit. The default is view."
+                  }
+                ]
+              },
+              "response" : {
+                "properties": [
+                  {
+                    "attribute": "id",
+                    "dataType": "String",
+                    "mandatory": true
+                  },
+                  {
+                    "attribute": "name",
+                    "dataType": "String",
+                    "mandatory": true
+                  }
+                ]
+              }
+            }
+          }  
+        ]
+      }
+    ]
+  }
+  

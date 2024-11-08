@@ -1,0 +1,24 @@
+#table-filter-popover {
+  border: 1px solid var(--borderPopover);
+  border-radius: 12px;
+
+  .form-filter-popover>div.ant-card-body>div.ant-row {
+    justify-content: flex-end;
+    margin-bottom: 0;
+
+    .reset-filter {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .base-filter {
+      color: var(--neutralWhite);
+      border-bottom: 1px solid var(--neutralWhite);
+    }
+
+    .data-filter {
+      color: var(--textLinking);
+      border-bottom: 1px solid var(--textLinking);
+    }
+  }
+}

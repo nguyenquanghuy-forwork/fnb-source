@@ -1,0 +1,68 @@
+.header-style {
+  height: 68px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  .header-menu {
+    display: none;
+  }
+  .header-notification {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background: #f7f5ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-store-name {
+    color: #50429b;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  .header-domain-name {
+    color: #50429b;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .top-bar-search {
+    .ant-select-selector {
+      border: none !important;
+      background-color: #f7f5ff !important;
+      height: 44px !important;
+    }
+    .ant-select-dropdown {
+      width: 180px !important;
+    }
+    .ant-select-arrow {
+      top: 22px;
+    }
+  }
+}
+@media (max-width: 428px) {
+  .ant-layout-sider,
+  .hide-mobile-mode {
+    display: none;
+  }
+  .header-style {
+    .header-menu {
+      border-radius: 8px;
+      background: #f7f5ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .header-notification {
+      display: none;
+    }
+  }
+}

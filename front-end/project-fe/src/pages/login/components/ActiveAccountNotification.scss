@@ -1,0 +1,18 @@
+.active-account-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  gap: 50px;
+
+  position: absolute;
+  width: 738px;
+  height: 576px;
+  left: 964px;
+  top: calc(50% - 576px / 2);
+
+  background: #ffffff;
+  box-shadow: 8px 8px 120px rgba(0, 0, 0, 0.05);
+  border-radius: 24px;
+}

@@ -1,0 +1,298 @@
+.test {
+  color: red;
+}
+
+.fnb-button {
+  border-radius: 12px;
+  padding: 12px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  column-gap: 8px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  transition: all 0.2s ease-out;
+
+  /* Remove default css button */
+  border: none;
+  &:active {
+    border: none;
+  }
+  &--size {
+    &-default {
+      height: 44px;
+    }
+    &-large {
+      height: 48px;
+    }
+  }
+  &:hover {
+    @media (hover: hover) and (pointer: fine) {
+      transition: all 0.2s ease-out;
+    }
+  }
+
+  &__icon {
+    path {
+      transition: all 0.2s ease-out;
+      &:hover {
+        @media (hover: hover) and (pointer: fine) {
+          transition: all 0.2s ease-out;
+        }
+      }
+    }
+  }
+
+  &__label {
+    @extend .fnb-typography__type--b1-medium;
+    transition: all 0.2s ease-out;
+    &:hover {
+      @media (hover: hover) and (pointer: fine) {
+        transition: all 0.2s ease-out;
+      }
+    }
+  }
+
+  &--primary {
+    background: $fnb-100;
+
+    .fnb-button {
+      &__label {
+        color: $white;
+      }
+      &__icon {
+        path {
+          fill: $white;
+        }
+      }
+    }
+
+    &:hover {
+      @media (hover: hover) and (pointer: fine) {
+        background: $fnb-60;
+      }
+    }
+
+    &:active {
+      background: $fnb-100;
+    }
+
+    &--danger {
+      background: $critical-70;
+      &:hover {
+        background: $critical-50;
+      }
+    }
+  }
+
+  &--secondary {
+    background: $white;
+
+    .fnb-button {
+      &__label,
+      &__icon > path {
+        color: $fnb-100;
+      }
+    }
+
+    &:hover {
+      @media (hover: hover) and (pointer: fine) {
+        background: $fnb-30;
+        .fnb-button {
+          &__label {
+            color: $fnb-100;
+          }
+          &__icon > path {
+            fill: $fnb-100;
+          }
+        }
+      }
+    }
+    &:active {
+      .fnb-button {
+        &__label {
+          color: $fnb-100;
+        }
+        &__icon > path {
+          fill: $fnb-100;
+        }
+      }
+    }
+  }
+
+  &--secondary-purple {
+    background: $fnb-20;
+    .fnb-button {
+      &__label,
+      &__icon {
+        color: $fnb-100;
+      }
+    }
+    &:hover {
+      @media (hover: hover) and (pointer: fine) {
+        background: $fnb-30;
+        .fnb-button {
+          &__label {
+            color: $fnb-100;
+          }
+          &__icon > path {
+            fill: $fnb-100;
+          }
+        }
+      }
+    }
+    &:active {
+      .fnb-button {
+        &__label {
+          color: $fnb-100;
+        }
+        &__icon > path {
+          fill: $fnb-100;
+        }
+      }
+    }
+  }
+
+  &--tertiary {
+    background: transparent;
+
+    .fnb-button {
+      &__label {
+        color: $fnb-100;
+      }
+      &__icon {
+        path {
+          fill: $fnb-100;
+        }
+      }
+    }
+
+    &:hover {
+      @media (hover: hover) and (pointer: fine) {
+        background: $fnb-30;
+        .fnb-button {
+          &__label {
+            // color: $fnb-50;
+          }
+          &__icon {
+            path {
+              // fill: $fnb-50;
+            }
+          }
+        }
+      }
+    }
+
+    &:active {
+      .fnb-button {
+        &__label {
+          color: $fnb-100;
+        }
+        &__icon {
+          path {
+            fill: $fnb-100;
+          }
+        }
+      }
+    }
+    &--danger {
+      .fnb-button {
+        &__label {
+          color: $critical-70;
+        }
+        &__icon {
+          path {
+            fill: $critical-70;
+          }
+        }
+      }
+      &:hover {
+        @media (hover: hover) and (pointer: fine) {
+          background: $critical-20;
+          .fnb-button {
+            &__label {
+              // color: $critical-50;
+            }
+            &__icon {
+              path {
+                // fill: $critical-50;
+              }
+            }
+          }
+        }
+      }
+  
+      &:active {
+        .fnb-button {
+          &__label {
+            color: $critical-100;
+          }
+          &__icon {
+            path {
+              fill: $critical-100;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  &--disabled {
+    &--fulfill {
+      cursor: not-allowed !important;
+      background: #d8dae1;
+      &:hover {
+        @media (hover: hover) and (pointer: fine) {
+          background: #d8dae1;
+          .fnb-button {
+            &__label {
+              color: $gray-60;
+            }
+            &__icon > path {
+              fill: $gray-60;
+            }
+          }
+        }
+      }
+      .fnb-button {
+        &__label {
+          color: $gray-60;
+        }
+        &__icon > path {
+          fill: $gray-60;
+        }
+      }
+    }
+    &--outlined {
+      cursor: not-allowed !important;
+      &:hover {
+        @media (hover: hover) and (pointer: fine) {
+          .fnb-button {
+            &__label {
+              color: $gray-60;
+            }
+            &__icon > path {
+              fill: $gray-60;
+            }
+          }
+        }
+      }
+      .fnb-button {
+        &__label {
+          color: $gray-60;
+        }
+        &__icon > path {
+          fill: $gray-60;
+        }
+      }
+    }
+  }
+}

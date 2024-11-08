@@ -1,0 +1,15 @@
+.input-wrapper {
+  .input-field {
+    .ant-input-affix-wrapper {
+      border-radius: 12px;
+      height: 44px;
+      border: 1px solid var(--borderSearchBar);
+      background: var(--brandingBackground, #fff);
+      ::placeholder {
+        color: var(--placeholderSearchBar);
+        font-weight: 400;
+        font-size: 16px;
+      }
+    }
+  }
+}

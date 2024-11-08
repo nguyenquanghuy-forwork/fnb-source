@@ -1,0 +1,170 @@
+.login-bg {
+  background: {
+    image: url(../../images/go-social-bg.png);
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+    attachment: fixed;
+  }
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17.5%;
+  .button-submit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .login-form {
+    width: 23.3%;
+    min-width: 448px;
+    background: var(--background, #fff);
+    box-shadow: 8px 8px 120px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 28px;
+    border-radius: 24px;
+    .login-form-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .login-form-title {
+        color: #342b64;
+        font-size: 32px;
+        font-weight: 600;
+      }
+      .ant-select-selector {
+        box-shadow: none;
+        border: none;
+      }
+    }
+    .text-btn-login {
+      color: #fff;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+  }
+  .active-account-component {
+    font-family: 'Plus Jakarta Sans';
+    width: 100%;
+    max-width: 738px;
+    height: 576px;
+    background: var(--background, #fff);
+    box-shadow: 8px 8px 120px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 28px;
+    border-radius: 24px;
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .content {
+      padding: 0 12px;
+      font-family: 'Plus Jakarta Sans';
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center; /* Tittle Content */
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #2f2d39;
+      order: 2;
+      align-self: stretch;
+      flex-grow: 0;
+    }
+    .ant-image {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .image {
+        width: 308.53px;
+      }
+    }
+    .title {
+      font-family: 'Plus Jakarta Sans';
+      height: 40px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      display: flex;
+      align-items: center;
+      color: #50429b;
+    }
+    .hotline {
+      font-family: 'Plus Jakarta Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #2f2d39;
+      flex: none;
+      order: 3;
+      align-self: stretch;
+      flex-grow: 0;
+      .contact {
+        font-family: Plus Jakarta Sans;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        color: var(--Text-and-Icons-On-sub-default, #50429b);
+      }
+    }
+    .text-btn-login {
+      font-family: 'Plus Jakarta Sans';
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 12px;
+      width: 155px;
+      min-width: 40px;
+      height: 40px;
+      min-height: 40px;
+      max-height: 48px;
+      background: #50429b;
+      border-radius: 12px;
+      flex: none;
+      order: 4;
+      flex-grow: 0;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .login-bg {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 10%;
+    .logo-bg {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  .login-bg {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    .logo-bg {
+      width: 252px;
+    }
+  }
+}
